@@ -4,15 +4,11 @@ BB84 Protocol Simulation by Muhammad Haris Mubashar
 
 ## Table of Contents
 
-- [Project Title](#project-title)
 - [Introduction](#introduction)
 - [Conventions](#conventions)
 - [Protocol](#features)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
