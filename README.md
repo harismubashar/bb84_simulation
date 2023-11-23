@@ -6,7 +6,7 @@ BB84 Protocol Simulation by Muhammad Haris Mubashar
 
 - [Introduction](#introduction)
 - [Conventions](#conventions)
-- [Protocol](#features)
+- [Protocol](#protocol)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 
@@ -53,7 +53,7 @@ At this point, Bob would reveals some of the bits to check for the presence of E
 
 ## Getting Started
 
-To get a local copy up and running, follow these steps:
+To get a local copy up and running, follow these steps:\
 Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:
 - make
 
@@ -61,10 +61,11 @@ This will create the executable bb84_sim in the directory
 
 ## Usage
 
-    Usage:
-    To run a simulation of the protocol with random encryption and decryption basis, simply follow the format:
+    To run a quick simulation without any specified parameters, you may simply run (this will choose a random message of length 10-100):
+        ./bb84_sim
+    To run a simulation of the protocol with specified message, but random encryption and decryption basis, follow the format:
         ./bb84_sim <binary message>
-    To run a simulation with chosen encryption and decryption basis, follow the format:
+    To run a simulation with chosen message, encryption and decryption basis, follow the format:
         ./bb84_sim <binary message> -e <encryption basis> -d <decription basis>
     Note that the encryption basis and decryption basis must be of the same length as the message
     You may also opt to choose only an encryption basis or decryption basis and let the other one be randomized like so:
