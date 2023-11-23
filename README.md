@@ -12,21 +12,21 @@ BB84 Protocol Simulation by Muhammad Haris Mubashar
 
 ## Introduction
 
-The BB84 protocol is a key distribution protocol which uses photons and quantum phenomon to distribute keys (from Alice to Bob in our example).\
-In practice, the protocol utilized uncertainty and quantum superposition in order to work as described in the simulation.\
-The simulation is intended to show how the protocol would work while using probabilities we would expect to see in practice.\
+The BB84 protocol is a key distribution protocol which uses photons and quantum phenomon to distribute keys (from Alice to Bob in our example).
+In practice, the protocol utilized uncertainty and quantum superposition in order to work as described in the simulation.
+The simulation is intended to show how the protocol would work while using probabilities we would expect to see in practice.
 
 
 ## Conventions
 
 We will use the following bit encoding convention in the simulation:\
     Using the following bit encoding:\
-        Rectilinear Basis (r):\
-            0 is encoded to H (Horizontal), ↔ (0°)\
-            1 is encoded to V (Vertical), ↕ (90°)\
-        Diagonal Basis (d):\
-            0 is encoded to R (45° Right), ⤢ (45°)\
-            1 is encoded to L (-45° Left), ⤡ (-45°)\
+        - Rectilinear Basis (r):\
+            - 0 is encoded to H (Horizontal), ↔ (0°)\
+            - 1 is encoded to V (Vertical), ↕ (90°)\
+        - Diagonal Basis (d):\
+            - 0 is encoded to R (45° Right), ⤢ (45°)\
+            - 1 is encoded to L (-45° Left), ⤡ (-45°)\
 
 The inputs for encryption and decryption basis will be strings consisting of character "r" and "d", where "r" represents a rectilinear basis, and "d" represents a diagonal basis.
 
