@@ -41,22 +41,22 @@ Once the encryption algorithm uses the encryption basis to encrypt the binary me
 Here is the approach of the BB84 protocol which the simulation will demonstrate:\
 
 Protocol:
-1. Alice chooses a bit string\
-2. Alice randomly chooses an encoding basis (Rectilinear Basis or Diagonal Basis) for each bit\
-3. Using the encoding basis, Alice generates encoded quantum states for the bits and sends them to Bob\
-4. Bob randomly chooses a decoding basis (Rectilinear Basis or Diagonal Basis) for each bit\
-5. Using the decoding basis, Bob decodes the quantum states that Alice has sent. As a result, Bob now has a bit string as well (not necessarily the same as Alice’s bit string)\
-6. Bob publicly states the decoding basis he used.\
-7. Alice checks the encoding basis Bob used for each bit with the decoding basis she used for each bit. If the basis used by both her and Bob are the same for a bit, Alice informs Bob that the bit is suitable for use. The bits for which different basis were used are discarded. The bits that are suitable for use are kept as shared information (key)\
+1. Alice chooses a bit string
+2. Alice randomly chooses an encoding basis (Rectilinear Basis or Diagonal Basis) for each bit
+3. Using the encoding basis, Alice generates encoded quantum states for the bits and sends them to Bob
+4. Bob randomly chooses a decoding basis (Rectilinear Basis or Diagonal Basis) for each bit
+5. Using the decoding basis, Bob decodes the quantum states that Alice has sent. As a result, Bob now has a bit string as well (not necessarily the same as Alice’s bit string)
+6. Bob publicly states the decoding basis he used.
+7. Alice checks the encoding basis Bob used for each bit with the decoding basis she used for each bit. If the basis used by both her and Bob are the same for a bit, Alice informs Bob that the bit is suitable for use. The bits for which different basis were used are discarded. The bits that are suitable for use are kept as shared information (key)
 
-At this point, Bob would reveals some of the bits to check for the presence of Eve, and Alice confirms the bits to check whether eavesdropping occurred.\
+At this point, Bob would reveals some of the bits to check for the presence of Eve, and Alice confirms the bits to check whether eavesdropping occurred.
 
 ## Getting Started
 
-To get a local copy up and running, follow these steps:\
-    Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:\
-        make\
-    This will create the executable bb84_sim in the directory\
+To get a local copy up and running, follow these steps:
+Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:
+- make
+This will create the executable bb84_sim in the directory
 
 ## Usage
 
