@@ -54,7 +54,7 @@ At this point, Bob would reveals some of the bits to check for the presence of E
 ## Getting Started
 
 To get a local copy up and running, follow these steps:\
-Clone the repo:
+Clone the repo using the command:
 - git clone https://github.com/harismubashar/bb84_simulation.git
 
 or
