@@ -19,14 +19,14 @@ The simulation is intended to show how the protocol would work while using proba
 
 ## Conventions
 
-We will use the following bit encoding convention in the simulation:\
-    Using the following bit encoding:\
-        - Rectilinear Basis (r):\
-            - 0 is encoded to H (Horizontal), ↔ (0°)\
-            - 1 is encoded to V (Vertical), ↕ (90°)\
-        - Diagonal Basis (d):\
-            - 0 is encoded to R (45° Right), ⤢ (45°)\
-            - 1 is encoded to L (-45° Left), ⤡ (-45°)\
+We will use the following bit encoding convention in the simulation:
+- Using the following bit encoding:
+    - Rectilinear Basis (r):
+        - 0 is encoded to H (Horizontal), ↔ (0°)
+        - 1 is encoded to V (Vertical), ↕ (90°)
+    - Diagonal Basis (d):
+        - 0 is encoded to R (45° Right), ⤢ (45°)
+        - 1 is encoded to L (-45° Left), ⤡ (-45°)
 
 The inputs for encryption and decryption basis will be strings consisting of character "r" and "d", where "r" represents a rectilinear basis, and "d" represents a diagonal basis.
 
@@ -40,7 +40,7 @@ Once the encryption algorithm uses the encryption basis to encrypt the binary me
 
 Here is the approach of the BB84 protocol which the simulation will demonstrate:\
 
-Protocol:\
+Protocol:
 1. Alice chooses a bit string\
 2. Alice randomly chooses an encoding basis (Rectilinear Basis or Diagonal Basis) for each bit\
 3. Using the encoding basis, Alice generates encoded quantum states for the bits and sends them to Bob\
