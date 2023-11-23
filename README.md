@@ -30,11 +30,11 @@ We will use the following bit encoding convention in the simulation:
 
 The inputs for encryption and decryption basis will be strings consisting of character "r" and "d", where "r" represents a rectilinear basis, and "d" represents a diagonal basis.
 
-Once the encryption algorithm uses the encryption basis to encrypt the binary message, the message will consist of characters "H", "V", "R", and "L" (as shown above) where\
-"H" represents Horizontal Rectilinear (↔, 0°) polarization\
-"V" represents Vertical Rectilinear (↕ 90°) polarization\
-"R" represents "Right" Diagonal (⤢ 45°) polarization\
-"L" represents "Left" Diagonal (⤡ -45°) polarization\
+Once the encryption algorithm uses the encryption basis to encrypt the binary message, the message will consist of characters "H", "V", "R", and "L" (as shown above) where:
+- "H" represents Horizontal Rectilinear (↔, 0°) polarization
+- "V" represents Vertical Rectilinear (↕ 90°) polarization
+- "R" represents "Right" Diagonal (⤢ 45°) polarization
+- "L" represents "Left" Diagonal (⤡ -45°) polarization
 
 ## Protocol
 
