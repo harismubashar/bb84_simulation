@@ -54,7 +54,13 @@ At this point, Bob would reveals some of the bits to check for the presence of E
 ## Getting Started
 
 To get a local copy up and running, follow these steps:\
-Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:
+Clone the repo:
+- git clone https://github.com/harismubashar/bb84_simulation.git
+
+or
+- Save the files (bb84_sim.c, Makefile) locally
+
+Traverse to the cloned directory (or the directory with the files) and run the Makefile using:
 - make
 
 This will create the executable bb84_sim in the directory
