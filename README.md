@@ -38,7 +38,7 @@ Once the encryption algorithm uses the encryption basis to encrypt the binary me
 
 ## Protocol
 
-Here is the approach of the BB84 protocol which the simulation will demonstrate:\
+Here is the approach of the BB84 protocol which the simulation will demonstrate:
 
 Protocol:
 1. Alice chooses a bit string
@@ -55,7 +55,7 @@ At this point, Bob would reveals some of the bits to check for the presence of E
 
 To get a local copy up and running, follow these steps:
 Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:
-- make
+- make\
 This will create the executable bb84_sim in the directory
 
 ## Usage
