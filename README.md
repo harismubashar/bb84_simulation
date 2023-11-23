@@ -56,6 +56,7 @@ At this point, Bob would reveals some of the bits to check for the presence of E
 To get a local copy up and running, follow these steps:
 Save the files (bb84_sim.c, Makefile) locally and simply run the Makefile using:
 - make\
+
 This will create the executable bb84_sim in the directory
 
 ## Usage
