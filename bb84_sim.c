@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-size_t message_length;
+int message_length;
 char *message = NULL;
 char *enc_basis = NULL;
 char *dec_basis = NULL;
@@ -263,7 +263,7 @@ int main(int argc, char *argv[]){
         message_length = rand()%91;
         message_length += 10;
         message = generateRandomMessage(message_length);
-        printf("Randomly chosen Alice's message of length %ld: %s\n", message_length, message);
+        printf("Randomly chosen Alice's message of length %d: %s\n", message_length, message);
         printf("Note: You may also specify protocol details by using the format:\n");
         printf("    Usage: %s <message in binary> -e <encryption basis> -d <decription basis>\n", argv[0]);
         if (isBinaryString(message) != 1){
