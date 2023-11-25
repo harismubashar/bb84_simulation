@@ -92,7 +92,7 @@ This will create the executable bb84_sim in the directory
         100000
         y
         25000
-    
+
     Which returned the following results for me:
         SIMULATION STATS:
         Total string length Alice sends to Bob: 100000
@@ -100,6 +100,6 @@ This will create the executable bb84_sim in the directory
         Number of bits Bob released to check for the presence of Eve: 25000
         Number of mismatches found by Alice from released bits: 6255
         Percent error detected by Alice and Bob from mismatched bits to released bits (to two decimal places): 25.02%
-    
-        (OVERALL) Total number of matching bits from matching basis: 12567
+
+        (OVERALL) Total number of mismatching bits from matching basis: 12567
         (OVERALL) Percent error from all shared bits to shared basis (to two decimal places): 25.11%

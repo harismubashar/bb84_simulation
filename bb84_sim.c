@@ -236,7 +236,7 @@ void printSimStats(char *enc_basis, char *dec_basis, char *dec_str){
 
     printf("\n");
     percent_error = fabs((((float)num_shared_basis_bits - (float)num_shared_basis) / (float)num_shared_basis) * 100);
-    printf("(OVERALL) Total number of matching bits from matching basis: %d\n", num_shared_basis - num_shared_basis_bits);
+    printf("(OVERALL) Total number of mismatching bits from matching basis: %d\n", num_shared_basis - num_shared_basis_bits);
     printf("(OVERALL) Percent error from all shared bits to shared basis (to two decimal places): %.2f%%\n", percent_error);
 
     if (eve_bool == 0){
