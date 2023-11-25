@@ -46,10 +46,13 @@ Protocol:
 3. Using the encoding basis, Alice generates encoded quantum states for the bits and sends them to Bob
 4. Bob randomly chooses a decoding basis (Rectilinear Basis or Diagonal Basis) for each bit
 5. Using the decoding basis, Bob decodes the quantum states that Alice has sent. As a result, Bob now has a bit string as well (not necessarily the same as Alice’s bit string)
-6. Bob publicly states the decoding basis he used.
+6. Bob publicly states the decoding basis he used
 7. Alice checks the encoding basis Bob used for each bit with the decoding basis she used for each bit. If the basis used by both her and Bob are the same for a bit, Alice informs Bob that the bit is suitable for use. The bits for which different basis were used are discarded. The bits that are suitable for use are kept as shared information (key)
+8. Bob reveals some of the bits to check for the presence of Eve
+9. Alice crosschecks Bob's revealed bits with hers to check whether eavesdropping occurred
 
-At this point, Bob would reveals some of the bits to check for the presence of Eve, and Alice confirms the bits to check whether eavesdropping occurred.
+If Alice and Bob conclude the presence of Eve, they will abort the protocol and start anew.
+Otherwise, they will discard the bits revealed by Bob and use the remaining shared bits as a key.
 
 ## Getting Started
 
@@ -67,8 +70,13 @@ This will create the executable bb84_sim in the directory
 
 ## Usage
 
-    To run a quick simulation without any specified parameters, you may simply run (this will choose a random message of length 10-100):
+    To run a quick simulation without any specified parameters, you may simply run:
         ./bb84_sim
+            You will then get to input an int to specify the desired length of Alice's string
+            Next, you will be prompted ([y/n]) to input whether you would like the simulation to simulate Eve's interception
+            Next, you will be prompted to input the number of bits to check for the presence of Eve
+
+    Alternatively, you may run the executable in the following ways:
     To run a simulation of the protocol with specified message, but random encryption and decryption basis, follow the format:
         ./bb84_sim <binary message>
     To run a simulation with chosen message, encryption and decryption basis, follow the format:
@@ -78,3 +86,20 @@ This will create the executable bb84_sim in the directory
         ./bb84_sim <binary message> -e <encryption basis>
         ./bb84_sim <binary message> -d <decription basis>
 
+
+Example usage:
+    ./bb84_sim
+    100000
+    y
+    25000
+
+Which returned the following results for me:
+    SIMULATION STATS:
+    Total string length Alice sends to Bob: 100000
+    Total number of matching basis among Alice and Bob: 50048
+    Number of bits Bob released to check for the presence of Eve: 25000
+    Number of mismatches found by Alice from released bits: 6255
+    Percent error detected by Alice and Bob from mismatched bits to released bits (to two decimal places): 25.02%
+
+    (OVERALL) Total number of matching bits from matching basis: 12567
+    (OVERALL) Percent error from all shared bits to shared basis (to two decimal places): 25.11%
