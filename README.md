@@ -70,7 +70,7 @@ This will create the executable bb84_sim in the directory
 
 ## Usage
 
-    To run a quick simulation without any specified parameters, you may simply run:
+    To run a simulation with random parameters (this is the intended method), simply run:
         ./bb84_sim
             You will then get to input an int to specify the desired length of Alice's string
             Next, you will be prompted ([y/n]) to input whether you would like the simulation to simulate Eve's interception
