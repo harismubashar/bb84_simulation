@@ -1,6 +1,7 @@
 # Quantum Key Distribution: BB84 Protocol Simulation
 
 BB84 Protocol Simulation by Muhammad Haris Mubashar
+Full BB84 Report available [here](https://drive.google.com/file/d/1HjB_QC8g4IRJvfeUkzms1_vl0a9vR7-9/view?usp=sharing)
 
 ## Table of Contents
 
